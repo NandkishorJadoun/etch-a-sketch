@@ -5,14 +5,46 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(35, 35, 35);
+    flex-direction: column;
+    gap: 5%;
 }
 
 #container{
     display: flex;
+    border: solid wheat 3px;
+    border-radius: 5px;
 }
 
-.column-div{
-    border: black solid 1px;
-    height: 5px;
-    width: 5px;
+.grid-box-before{
+    border: rgb(35, 35, 35) solid 1px;
+    height: 15px;
+    width: 15px;
+}
+
+.grid-box-after{
+    border: wheat solid 1px;
+    background-color: wheat;
+    height: 15px;
+    width: 15px;
+}
+
+#button-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.button{
+    padding: 6px 12px;
+    cursor: pointer;
+    border: solid wheat 2px;
+    background-color: rgb(35, 35, 35);
+    color: wheat;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background-color: wheat;
+    color: rgb(35, 35, 35);
 }

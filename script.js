@@ -3,6 +3,9 @@ const reset = document.querySelector(".reset");
 const changeSizeButton = document.querySelector(".change-size");
 
 function makeGrid(size = 16){
+
+    container.innerHTML = "";
+    
     for(i=0;i<size;i++){
         let row = document.createElement("div");
         row.setAttribute("class", "row-div");

@@ -1,4 +1,5 @@
 body{
+    font-family: 'Times New Roman', Times, serif;
     height: 100vh;
     margin: 0px;
     padding: 0x;
@@ -14,37 +15,56 @@ body{
     display: flex;
     border: solid wheat 3px;
     border-radius: 5px;
+    width: 700px;
+    height: 700px;
+    
+}
+
+.row-div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 .grid-box-before{
-    border: rgb(35, 35, 35) solid 1px;
-    height: 15px;
-    width: 15px;
+    flex: 1;
+    border: wheat solid 1px;
+    
 }
 
 .grid-box-after{
+    flex: 1;
     border: wheat solid 1px;
     background-color: wheat;
-    height: 15px;
-    width: 15px;
 }
 
 #button-container{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
 }
 
 .button{
-    padding: 6px 12px;
+    padding: 8px 16px;
     cursor: pointer;
     border: solid wheat 2px;
     background-color: rgb(35, 35, 35);
     color: wheat;
     border-radius: 5px;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .button:hover{
     background-color: wheat;
     color: rgb(35, 35, 35);
+}
+
+.header{
+    cursor: pointer;
+    background-color: wheat;
+    color: rgb(35, 35, 35);
+    padding: 8px 16px;
+    border-radius: 12px;
 }

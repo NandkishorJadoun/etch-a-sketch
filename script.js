@@ -4,7 +4,8 @@ const reset = document.querySelector(".reset")
 
 function makeGrid(size = 16){
     for(i=0;i<size;i++){
-        let row = document.createElement("div")
+        let row = document.createElement("div");
+        row.setAttribute("class", "row-div")
 
         for(j=0; j<size;j++){
             let column = document.createElement("div")

@@ -17,14 +17,24 @@ function makeGrid(size = 16){
 
             column.addEventListener("mouseout", ()=>{
                 column.setAttribute("class", "grid-box-after");
+                column.setAttribute("style", `background-color: ${getRandomColor()}`)
+                container.setAttribute("style", `border: ${getRandomColor()} solid 3px`)
             })
 
             reset.addEventListener("click" , ()=>{
-                column.setAttribute("class", "grid-box-before");
+                column.setAttribute("style", `background-color: black`);
             })
         }
         container.appendChild(row)
     }
+}
+
+function getRandomColor(){
+    let r = Math.floor(Math.random() *255);
+    let g = Math.floor(Math.random() *255);
+    let b = Math.floor(Math.random() *255);
+
+    return `rgb(${r},${g},${b})`
 }
 
 changeSizeButton.addEventListener("click", ()=>{

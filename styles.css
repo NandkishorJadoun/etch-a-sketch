@@ -6,18 +6,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(35, 35, 35);
+    background-color: black;
     flex-direction: column;
     gap: 5%;
 }
 
 #container{
     display: flex;
-    border: solid wheat 3px;
+    border: solid white 3px;
     border-radius: 5px;
     width: 700px;
     height: 700px;
-    
 }
 
 .row-div{
@@ -29,14 +28,13 @@ body{
 
 .grid-box-before{
     flex: 1;
-    border: wheat solid 1px;
-    
+    border: black solid 1px;
+    background-color: black;
 }
 
 .grid-box-after{
     flex: 1;
-    border: wheat solid 1px;
-    background-color: wheat;
+    border: black solid 1px;
 }
 
 #button-container{
@@ -48,23 +46,23 @@ body{
 .button{
     padding: 8px 16px;
     cursor: pointer;
-    border: solid wheat 2px;
+    border: solid white 2px;
     background-color: rgb(35, 35, 35);
-    color: wheat;
+    color: white;
     border-radius: 5px;
     font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .button:hover{
-    background-color: wheat;
-    color: rgb(35, 35, 35);
+    background-color: white;
+    color: black;
 }
 
 .header{
     cursor: pointer;
-    background-color: wheat;
-    color: rgb(35, 35, 35);
+    background-color: white;
+    color: black;
     padding: 8px 16px;
     border-radius: 12px;
 }
